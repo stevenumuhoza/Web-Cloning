@@ -32,3 +32,91 @@ a {
     height: 18px;
     object-fit: contain;
 }
+button,input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+:root {
+  --dark: #061d2b;
+  --dark-2: #092637;
+  --blue: #2453ff;
+  --light-blue: #315aff;
+  --white: #ffffff;
+  --muted: #b8c5d0;
+  --border: rgba(255,255,255,0.25);
+}
+.site-header {
+  background: var(--dark);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+  z-index: 10;
+}
+
+.nav-container {
+  height: 64px;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 1.05;
+  flex-shrink: 0;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+}
+
+.desktop-nav a {
+  font-size: 10px;
+  white-space: nowrap;
+  color: #dbe3e8;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.nav-right a {
+  color: #dbe3e8;
+}
+
+.divider {
+  opacity: .5;
+}
+
+.search-btn,.menu-btn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 24px;
+  margin-left: 12px;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 20px;
+}
+
+.mobile-menu {
+  display: none;
+}
