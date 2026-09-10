@@ -16,7 +16,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.menu-btn {
+.btn2 {
     width: 24px;
     height: 24px;
     padding: 0;
@@ -27,7 +27,7 @@ a {
     justify-content: center;
 }
 
-.menu-btn img {
+.btn2 img {
     width: 18px;
     height: 18px;
     object-fit: contain;
@@ -48,14 +48,14 @@ button {
   --muted: #b8c5d0;
   --border: rgba(255,255,255,0.25);
 }
-.site-header {
+.header1 {
   background: var(--dark);
   border-bottom: 1px solid rgba(255,255,255,0.06);
   position: relative;
   z-index: 10;
 }
 
-.nav-container {
+.wrap1 {
   height: 64px;
   max-width: 1440px;
   margin: auto;
@@ -65,7 +65,7 @@ button {
   gap: 40px;
 }
 
-.logo {
+.logo1 {
   width: 125px;
   display: flex;
   flex-direction: column;
@@ -75,20 +75,20 @@ button {
   flex-shrink: 0;
 }
 
-.desktop-nav {
+.nav1 {
   display: flex;
   align-items: center;
   gap: 24px;
   flex: 1;
 }
 
-.desktop-nav a {
+.nav1 a {
   font-size: 10px;
   white-space: nowrap;
   color: #dbe3e8;
 }
 
-.nav-right {
+.nav2 {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -96,15 +96,15 @@ button {
   white-space: nowrap;
 }
 
-.nav-right a {
+.nav2 a {
   color: #dbe3e8;
 }
 
-.divider {
+.line1 {
   opacity: .5;
 }
 
-.search-btn,.menu-btn {
+.btn1,.btn2 {
   background: none;
   color: white;
   border: none;
@@ -112,22 +112,22 @@ button {
   margin-left: 12px;
 }
 
-.menu-btn {
+.btn2 {
   display: none;
   font-size: 20px;
 }
 
-.mobile-menu {
+.menu1 {
   display: none;
 }
-.hero-section,
-.clients-section,
-.podcast-section {
+.sec1,
+.sec4,
+.sec3 {
   max-width: 1440px;
   margin: auto;
 }
 
-.image-placeholder {
+.img1 {
   background-color: #182d3b;
   background-size: cover;
   background-position: center;
@@ -135,42 +135,42 @@ button {
 }
 /* HERO IMAGES */
 
-.image-1 {
+.img2 {
   background-image: url("cables.jpeg");
 }
 
-.image-2 {
+.img3 {
   background-image: url("rainbow.jpeg");
 }
 
-.image-3 {
+.img4 {
   background-image: url("bigpic.png");
 }
 
-.image-4 {
+.img5 {
   background-image: url("man.png");
 }
 
-.image-5 {
+.img6 {
   background-image: url("mountains.png");
 }
 
-.eyebrow,
-.section-label {
+.tag1,
+.tag2 {
   font-size: 9px;
   letter-spacing: .6px;
   color: #d9e4eb;
   text-transform: uppercase;
 }
 
-.arrow-link {
+.link1 {
   display: inline-block;
   font-size: 11px;
   margin-top: 12px;
   font-weight: bold;
 }
 
-.card-content {
+.text1 {
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -178,44 +178,44 @@ button {
   min-height: 150px;
 }
 
-.card-content h3 {
+.text1 h3 {
   font-size: 12px;
   line-height: 1.45;
   font-weight: 400;
 }
-.hero-section {
+.sec1 {
   padding: 48px 50px 44px;
 }
 
-.hero-grid {
+.grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1.55fr;
   gap: 12px;
   align-items: end;
 }
 
-.hero-card {
+.box1 {
   position: relative;
   overflow: hidden;
   min-height: 330px;
 }
 
-.hero-card .image-placeholder {
+.box1 .img1 {
   position: absolute;
   inset: 0;
   min-height: 100%;
 }
 
-.card-small {
+.small1 {
   height: 330px;
 }
 
-.card-large {
+.big1 {
   height: 480px;
 }
 
-.card-small .card-content,
-.card-large .large-card-content {
+.small1 .text1,
+.big1 .text2 {
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -223,16 +223,16 @@ button {
   right: 0;
 }
 
-.card-large .image-placeholder {
+.big1 .img1 {
   background-color: #2631a5;
   
 }
 
-.large-card-content {
+.text2 {
   padding: 26px;
 }
 
-.large-card-content h1 {
+.text2 h1 {
   font-size: clamp(24px, 2.2vw, 42px);
   line-height: 1.15;
   font-weight: 400;
@@ -240,7 +240,7 @@ button {
   margin: 8px 0 25px;
 }
 
-.white-button {
+.btn3 {
   background: white;
   color: #111;
   display: inline-block;
@@ -249,45 +249,45 @@ button {
   font-weight: bold;
 }
 
-.hero-bottom {
+.row1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1.55fr;
   gap: 12px;
   margin-top: 62px;
 }
 
-.hero-bottom-card {
+.box2 {
   min-height: 150px;
   position: relative;
   overflow: hidden;
 }
 
-.hero-bottom-card .image-placeholder {
+.box2 .img1 {
   position: absolute;
   inset: 0;
 }
 
-.hero-bottom-card::after {
+.box2::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,.75), transparent);
 }
 
-.hero-bottom-card .card-content {
+.box2 .text1 {
   position: relative;
   z-index: 1;
   min-height: 150px;
 }
 
-.newsletter-box {
+.box3 {
     background-color: #294050;
     padding: 60px 68px;
     box-sizing: border-box;
     color: white;
 }
 
-.newsletter-box h2 {
+.box3 h2 {
     margin: 0 0 22px 0;
     text-align: center;
     font-size: 28px;
@@ -295,13 +295,13 @@ button {
     line-height: 1.25;
 }
 
-.email-row {
+.row2 {
     display: flex;
     width: 100%;
     height: 59px;
 }
 
-.email-row input {
+.row2 input {
     flex: 1;
     border: none;
     border-top: 1px solid #e31837;
@@ -311,7 +311,7 @@ button {
     box-sizing: border-box;
 }
 
-.email-arrow {
+.btn4 {
     width: 60px;
     border: none;
     background-color: #08a9e6;
@@ -319,35 +319,35 @@ button {
     font-size: 30px;
 }
 
-.email-error {
+.msg1 {
     margin: 13px 0 26px 0;
     font-size: 16px;
 }
 
-.continue-row {
+.row3 {
     display: flex;
     align-items: center;
     gap: 28px;
     margin-bottom: 22px;
 }
 
-.continue-row span {
+.row3 span {
     height: 2px;
     background-color: white;
     flex: 1;
 }
 
-.continue-row p {
+.row3 p {
     margin: 0;
     font-size: 17px;
 }
 
-.newsletter-buttons {
+.row4 {
     display: flex;
     gap: 20px;
 }
 
-.newsletter-buttons button {
+.row4 button {
     flex: 1;
     height: 53px;
     background: transparent;
@@ -356,19 +356,19 @@ button {
     font-size: 18px;
     font-weight: 600;
 }
-.putting{
+.title1{
     text-align: center;
     font-weight: 1000;
 }
 
-.newsletter-section {
+.sec2 {
   min-height: 270px;
   display: flex;
   position: relative;
   overflow: hidden;
 }
 
-.newsletter-image {
+.img7 {
   width: 50%;
   min-height: 270px;
 
@@ -378,7 +378,7 @@ button {
   background-repeat: no-repeat;
 }
 
-.newsletter-content {
+.text3 {
   width: 50%;
   background: #030d15;
   padding: 38px 48px;
@@ -387,26 +387,26 @@ button {
   justify-content: center;
 }
 
-.newsletter-content h2 {
+.text3 h2 {
   font-size: 28px;
   line-height: 1.15;
   font-weight: 400;
   margin-bottom: 14px;
 }
 
-.newsletter-content p {
+.text3 p {
   font-size: 11px;
   max-width: 430px;
   color: #c3cdd5;
 }
 
-.newsletter-form {
+.form1 {
   display: flex;
   margin-top: 18px;
   max-width: 390px;
 }
 
-.newsletter-form input {
+.form1 input {
   flex: 1;
   min-width: 0;
   padding: 11px;
@@ -414,7 +414,7 @@ button {
   font-size: 11px;
 }
 
-.newsletter-form button {
+.form1 button {
   background: white;
   border: none;
   padding: 0 20px;
@@ -422,66 +422,66 @@ button {
   font-weight: bold;
 }
 
-.form-message {
+.msg2 {
   margin-top: 10px;
   color: #86a8ff !important;
 }
-.podcast-section {
+.sec3 {
   background: linear-gradient(135deg, #224be8, #1732a7);
   padding: 48px 50px 35px;
 }
 
-.podcast-heading {
+.head1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
 
-.podcast-heading h2 {
+.head1 h2 {
   font-size: 31px;
   font-weight: 400;
   margin-bottom: 12px;
 }
 
-.podcast-heading p {
+.head1 p {
   font-size: 11px;
   line-height: 1.6;
   max-width: 600px;
 }
 
-.outline-button {
+.btn5 {
   border: 1px solid rgba(255,255,255,.6);
   padding: 12px 22px;
   font-size: 10px;
   white-space: nowrap;
 }
 
-.podcast-socials {
+.row5 {
   display: flex;
   gap: 12px;
   margin: 18px 0;
   font-size: 12px;
 }
 
-.podcast-player {
+.box4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 190px;
 }
 
-.podcast-info {
+.text4 {
   background: white;
   color: #111;
   padding: 20px;
 }
 
-.podcast-date {
+.date1 {
   font-size: 8px;
   color: #777;
 }
 
-.podcast-info h3 {
+.text4 h3 {
   font-size: 18px;
   line-height: 1.25;
   font-weight: 500;
@@ -489,12 +489,12 @@ button {
   margin: 8px 0;
 }
 
-.podcast-info p {
+.text4 p {
   font-size: 10px;
   max-width: 310px;
 }
 
-.player-controls {
+.box5 {
   background: #06255a;
   display: flex;
   flex-direction: column;
@@ -503,7 +503,7 @@ button {
   padding: 25px;
 }
 
-.play-btn {
+.btn6 {
   border: 1px solid white;
   border-radius: 50%;
   background: white;
@@ -514,21 +514,21 @@ button {
   padding-left: 3px;
 }
 
-.player-progress {
+.bar1 {
   width: 100%;
   height: 2px;
   background: rgba(255,255,255,.35);
   margin-top: 25px;
 }
 
-.progress-bar {
+.bar2 {
   width: 0%;
   height: 100%;
   background: white;
   transition: width .3s;
 }
 
-.player-times {
+.row6 {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -537,14 +537,14 @@ button {
   color: #b6c8e5;
 }
 
-.podcast-tabs {
+.tabs1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
   margin-top: 16px;
 }
 
-.podcast-tabs button {
+.tabs1 button {
   text-align: left;
   border: none;
   border-top: 2px solid rgba(255,255,255,.8);
@@ -555,50 +555,50 @@ button {
   opacity: .8;
 }
 
-.podcast-tabs button.active {
+.tabs1 button.on1 {
   border-color: #00b7ff;
   opacity: 1;
 }
 
 
 
-.clients-section {
+.sec4 {
   padding: 58px 50px 65px;
   text-align: center;
 }
 
-.clients-section h2 {
+.sec4 h2 {
   font-size: 26px;
   font-weight: 400;
   line-height: 1.25;
   margin: 18px 0 36px;
 }
 
-.clients-grid {
+.grid2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
   text-align: left;
 }
 
-.client-card {
+.card1 {
   background: #0a2a3b;
 }
 
-.client-card .image-placeholder {
+.card1 .img1 {
   height: 150px;
 }
 
-.client-card-content {
+.text5 {
   padding: 15px;
 }
 
-.client-card h3 {
+.card1 h3 {
   font-size: 11px;
   margin-bottom: 10px;
 }
 
-.client-card p {
+.card1 p {
   font-size: 10px;
   color: #b8c5d0;
   line-height: 1.5;
@@ -607,32 +607,32 @@ button {
 
 /* ================= CAREERS ================= */
 
-.careers-section {
+.sec5 {
   background: white;
   color: #111;
   padding: 55px 50px;
 }
 
-.careers-section .section-label {
+.sec5 .tag2 {
   color: #555;
   margin-bottom: 30px;
 }
 
-.careers-grid {
+.grid3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.careers-text h2 {
+.text6 h2 {
   color: #2d5aff;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-.careers-text p {
+.text6 p {
   color: #555;
   font-size: 10px;
   line-height: 1.7;
@@ -640,7 +640,7 @@ button {
   margin-bottom: 20px;
 }
 
-.blue-button {
+.btn7 {
   display: inline-block;
   background: #2d5aff;
   color: white;
@@ -648,12 +648,12 @@ button {
   padding: 12px 18px;
 }
 
-.careers-video {
+.box6 {
   height: 190px;
   background: #151515;
 }
 
-.video-placeholder {
+.box7 {
   height: 100%;
   display: flex;
   align-items: center;
@@ -661,11 +661,22 @@ button {
   background: linear-gradient(135deg, #292929, #101010);
 }
 
-.video-play {
+.btn8 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
   background: rgba(255,255,255,.9);
   font-size: 16px;
+}
+.img8 {
+  background-image: url(lucky.png);
+}
+
+.img9 {
+  background-image:url(kox.pnggi);
+}
+
+.img10 {
+  background-image: url(ride.png);
 }
