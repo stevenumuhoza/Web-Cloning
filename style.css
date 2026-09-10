@@ -206,17 +206,6 @@ button {
   min-height: 100%;
 }
 
-.hero-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,.7),
-    rgba(0,0,0,0.02) 65%
-  );
-}
-
 .card-small {
   height: 330px;
 }
