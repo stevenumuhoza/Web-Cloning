@@ -356,6 +356,10 @@ button {
     font-size: 18px;
     font-weight: 600;
 }
+.putting{
+    text-align: center;
+    font-weight: 1000;
+}
 
 .newsletter-section {
   min-height: 270px;
@@ -367,10 +371,11 @@ button {
 .newsletter-image {
   width: 50%;
   min-height: 270px;
-  background-color: #152f40;
-  background-image:
-    linear-gradient(90deg, rgba(0,0,0,.6), transparent),
-    linear-gradient(135deg, #19364a, #06121a);
+
+  background-image: url("newsletter.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .newsletter-content {
